@@ -10,8 +10,8 @@ const Footer = () => {
     ]
     return (
       <div className="w-full bg-primary">
-        <div className="px-4 pb-10 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-20">
-          <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
+        <div className="px-4 pb-10 pt-16 mx-auto  sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-4">
+          <div className="grid gap-16 text-center md:text-start row-gap-10 mb-8 lg:grid-cols-6">
             <div className="md:max-w-md lg:col-span-2">
               <a
                 href="/"
@@ -23,12 +23,12 @@ const Footer = () => {
                   CargoCheckTM
                 </span>
               </a>
-              <div className="mt-4 lg:max-w-sm">
+              <div className="mt-4 lg:max-w-sm ">
                 <p className="text-sm text-white">
                   Fastrack Safer Chemical <br /> Logistic
                 </p>
               </div>
-              <div className="flex gap-4 mt-10">
+              <div className="flex gap-4 mt-10 justify-center md:justify-start">
                 <a href="/">
                   <AiOutlineLinkedin className="text-white text-xl" />
                 </a>
@@ -41,14 +41,14 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
+            <div className="grid grid-cols-2  gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
               <div>
-                <p className="font-semibold tracking-wide text-white">
+                <p className="font-semibold tracking-wide  text-white">
                   Category
                 </p>
-                <ul className="mt-2 space-y-2">
+                <ul className="mt-2 space-y-2 ">
                   {industriesItem.map((item, idx) => (
-                    <li key={idx}>
+                    <li key={idx} >
                       <a href="/" className="text-white text-sm font-light">
                         {item.name}
                       </a>
