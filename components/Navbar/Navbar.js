@@ -2,12 +2,12 @@ import Link from "next/link";
 import { useState } from "react";
 import { FaAngleDown } from "react-icons/fa";
 import { RiUserLine } from "react-icons/ri";
-import logo from '/assets/logo.png';
-import dropdownLogo from '/assets/icon/customer-support.png';
-import truckLogo from '/assets/icon/truck.png';
+import logo from "/assets/logo.png";
+import dropdownLogo from "/assets/icon/customer-support.png";
+import truckLogo from "/assets/icon/truck.png";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
+
   const menuItem = (
     <>
       <li>
@@ -90,12 +90,15 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/industries" className="flex flex-row items-center">
-                <img  src={truckLogo.src} alt="" className="w-10 h-10 rounded-lg bg-[#D6DEE6] p-2" />
+              <Link href="/faq" className="flex flex-row items-center">
+                <img
+                  src={truckLogo.src}
+                  alt=""
+                  className="w-10 h-10 rounded-lg bg-[#D6DEE6] p-2"
+                />
                 <p className="text-primary font-semibold text-lg">FAQ</p>
               </Link>
             </li>
-
           </ul>
         </div>
       </li>
