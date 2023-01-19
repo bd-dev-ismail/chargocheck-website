@@ -80,7 +80,7 @@ const Navbar = () => {
             className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-64"
           >
             <li>
-              <Link href="/industries" className="flex flex-row items-center">
+              <Link href="/blog" className="flex flex-row items-center">
                 <img
                   src={dropdownLogo.src}
                   alt=""
