@@ -2,6 +2,7 @@ import Footer from "../Footer/Footer";
 import LetUs from "../Industries/LetUs/LetUs";
 import Navbar from "../Navbar/Navbar";
 import FaqBanner from "./FaqBanner/FaqBanner";
+import FaqCollapse from "./FaqCollapse/FaqCollapse";
 
 
 const FaqIndex = () => {
@@ -13,6 +14,9 @@ const FaqIndex = () => {
        <div>
         <FaqBanner/>
         </div> 
+        <div>
+          <FaqCollapse/>
+        </div>
         <div>
           <LetUs/>
         </div>
