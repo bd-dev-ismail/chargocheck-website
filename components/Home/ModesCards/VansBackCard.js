@@ -1,7 +1,7 @@
 
 const VansBackCard = ({ containers, btn }) => {
   return (
-    <div className="flex lg:flex-row flex-col text-center justify-center lg:text-start items-center gap-8">
+    <div className="flex bg-[#00336629] p-5 rounded-xl lg:flex-row flex-col text-center justify-center lg:text-start items-center gap-8">
       <div
         className="h-[266px] w-[237px] relative"
         style={{

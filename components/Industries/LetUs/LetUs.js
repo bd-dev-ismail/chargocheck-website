@@ -1,10 +1,10 @@
 import { FaArrowRight } from "react-icons/fa";
-
+import bg from '/assets/letUs.png';
 const LetUs = () => {
     return (
       <div
-        style={{ background: "rgba(50, 152, 255, 0.15)" }}
-        className="h-[23.1rem] mt-[7rem]  flex justify-center items-center w-full"
+        style={{ backgroundImage: `url(${bg.src})`}}
+        className="lg:h-[23.1rem] h-[28rem] mt-[7rem]  flex justify-center items-center w-full"
       >
         <div className="text-center">
           <div>

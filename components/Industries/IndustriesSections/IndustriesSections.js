@@ -7,6 +7,7 @@ const IndustriesSections = () => {
     <div className="mt-[3rem] mb-[5rem]">
       <div className="flex justify-center items-center gap-8">
         <h3
+        
           onClick={() => setBtn("Chemical Supplier")}
           className={`text-2xl font-bold py-4 px-6 cursor-pointer ${
             btn === "Chemical Supplier"

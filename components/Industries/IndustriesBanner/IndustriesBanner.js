@@ -1,4 +1,4 @@
-import Link from 'next/link';
+
 import { useRouter } from 'next/router';
 import { FaAngleRight } from 'react-icons/fa';
 
@@ -11,23 +11,23 @@ const IndustriesBanner = () => {
             Industries
           </h3>
         </div>
-        <div className="text-white font-bold text-base flex items-center gap-4 absolute top-[3%] left-[5%]">
+        <div className="text-white font-bold text-base flex items-center gap-4 absolute top-[15%] left-[5%]">
           {/* <Link>Home</Link>
           
             <FaAngleRight />
          
             {" "}
             <Link>Industries</Link> */}
-          <p className="cursor-pointer" onClick={() => router.push("/")}>
+          <a className="cursor-pointer" onClick={() => router.push("/")}>
             Home
-          </p>
+          </a>
           <FaAngleRight />
-          <p
+          <a
             className="cursor-pointer"
             onClick={() => router.push("/industries")}
           >
             Industries
-          </p>
+          </a>
         </div>
       </div>
     );

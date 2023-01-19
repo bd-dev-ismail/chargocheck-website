@@ -15,7 +15,7 @@ const SingleSection = ({btn}) => {
                 >
                   {btn}
                 </h2>
-                <p
+                <h4
                   style={{ fontSize: "24px", fontWeight: "300" }}
                   className=" text-secondary"
                 >
@@ -27,7 +27,7 @@ const SingleSection = ({btn}) => {
                     "CargoCheckTM provides performance analysis and real-time visibility to manufacturers and distributors to improve their operations' efficiency, accuracy, and competitiveness."}
                   {btn === "Transportation - Bulk & Packaged" &&
                     "CargoCheckTM helps transporters identify cost savings opportunities and analyze KPIs such as on-time delivery rate, order accuracy, and customer satisfaction."}
-                </p>
+                </h4>
               </div>
             </div>
             <div className="relative lg:w-1/2">

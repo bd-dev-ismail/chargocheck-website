@@ -2,30 +2,114 @@ import Link from "next/link";
 import { useState } from "react";
 import { FaAngleDown } from "react-icons/fa";
 import { RiUserLine } from "react-icons/ri";
+import logo from '/assets/logo.png';
+import dropdownLogo from '/assets/icon/customer-support.png';
+import truckLogo from '/assets/icon/truck.png';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const industries = [{}];
+  
   const menuItem = (
     <>
       <li>
+        <div className="dropdown  dropdown-hover">
+          <label
+            tabIndex={0}
+            className="font-bold cursor-pointer text-base flex items-center tracking-wide text-primary"
+          >
+            Industries <FaAngleDown className="ml-3" />
+          </label>
+          <ul
+            tabIndex={0}
+            className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-64"
+          >
+            <li>
+              <Link href="/industries" className="flex flex-row items-center">
+                <img
+                  src={dropdownLogo.src}
+                  alt=""
+                  className="w-10 h-10 rounded-lg bg-[#D6DEE6] p-2"
+                />
+                <p className="text-primary font-semibold text-lg">
+                  Chemical Supplier
+                </p>
+              </Link>
+            </li>
+            <li>
+              <Link href="/industries" className="flex flex-row items-center">
+                <img
+                  src={truckLogo.src}
+                  alt=""
+                  className="w-10 h-10 rounded-lg bg-[#D6DEE6] p-2"
+                />
+                <p className="text-primary font-semibold text-lg">
+                  Transportation
+                </p>
+              </Link>
+            </li>
+            <li>
+              <Link href="/industries" className="flex flex-row items-center">
+                <img
+                  src={dropdownLogo.src}
+                  alt=""
+                  className="w-10 h-10 rounded-lg bg-[#D6DEE6] p-2"
+                />
+                <p className="text-primary font-semibold text-lg">Goverment</p>
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </li>
+      {/* <li>
         <Link
           href="/industries"
           className="font-bold flex text-base items-center tracking-wide text-primary"
         >
           Industries <FaAngleDown className="ml-3" />
         </Link>
-      </li>
+      </li> */}
       <li>
+        <div className="dropdown  dropdown-hover">
+          <label
+            tabIndex={1}
+            className="font-bold cursor-pointer text-base flex items-center tracking-wide text-primary"
+          >
+            Resources <FaAngleDown className="ml-3" />
+          </label>
+          <ul
+            tabIndex={1}
+            className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-64"
+          >
+            <li>
+              <Link href="/industries" className="flex flex-row items-center">
+                <img
+                  src={dropdownLogo.src}
+                  alt=""
+                  className="w-10 h-10 rounded-lg  bg-[#D6DEE6] p-2"
+                />
+                <p className="text-primary font-semibold text-lg">Blog</p>
+              </Link>
+            </li>
+            <li>
+              <Link href="/industries" className="flex flex-row items-center">
+                <img  src={truckLogo.src} alt="" className="w-10 h-10 rounded-lg bg-[#D6DEE6] p-2" />
+                <p className="text-primary font-semibold text-lg">FAQ</p>
+              </Link>
+            </li>
+
+          </ul>
+        </div>
+      </li>
+      {/* <li>
         <Link
           href="/"
           className="font-bold text-base flex items-center tracking-wide text-primary"
         >
           Resources <FaAngleDown className="ml-3" />
         </Link>
-      </li>
+      </li> */}
       <li>
         <Link
-          href="/"
+          href="/about"
           className="font-bold text-base flex items-center tracking-wide text-primary"
         >
           About
@@ -68,14 +152,14 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link
               href="/"
-              aria-label="Company"
-              title="Company"
+              aria-label="Chargocheck"
+              title="Chargocheck"
               className="inline-flex items-center mr-8"
             >
-              {/* <img src="" alt="" /> */}
-              <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+              <img src={logo.src} alt="" />
+              {/* <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                 Chargocheck
-              </span>
+              </span> */}
             </Link>
             <ul className="flex items-center hidden gap-16 lg:flex">
               {menuItem}

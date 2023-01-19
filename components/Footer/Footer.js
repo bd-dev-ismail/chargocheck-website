@@ -1,6 +1,6 @@
 import {AiOutlineLinkedin, AiOutlinePhone} from 'react-icons/ai';
 import {BiEnvelope} from 'react-icons/bi';
-import {IoCallOutline} from 'react-icons/io';
+import logo from '/assets/footerlogo.png';
 const Footer = () => {
     const industriesItem = [
         {name: "Chemical Suppiler"},
@@ -19,9 +19,10 @@ const Footer = () => {
                 title="Company"
                 className="inline-flex items-center"
               >
-                <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase">
+                {/* <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase">
                   CargoCheckTM
-                </span>
+                </span> */}
+                <img src={logo.src} alt="" />
               </a>
               <div className="mt-4 lg:max-w-sm ">
                 <p className="text-sm text-white">
@@ -75,15 +76,15 @@ const Footer = () => {
               </div>
               <div>
                 <p className="font-semibold tracking-wide text-white">About</p>
-                <ul className="mt-2 space-y-2">
-                 {/* About Items  */}
-                </ul>
+                {/* <ul className="mt-2 space-y-2">
+                 About Items 
+                </ul> */}
               </div>
               <div>
                 <p className="font-semibold tracking-wide text-white">Pricing</p>
-                <ul className="mt-2 space-y-2">
-                 {/**Pricing Items */}
-                </ul>
+                {/* <ul className="mt-2 space-y-2">
+                 *Pricing Items
+                </ul> */}
               </div>
             </div>
           </div>
