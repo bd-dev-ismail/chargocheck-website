@@ -10,12 +10,6 @@ const FaqBanner = () => {
         </h3>
       </div>
       <div className="text-white font-bold text-base flex items-center gap-4 absolute top-[15%] left-[5%]">
-        {/* <Link>Home</Link>
-          
-            <FaAngleRight />
-         
-            {" "}
-            <Link>Industries</Link> */}
         <a className="cursor-pointer" onClick={() => router.push("/")}>
           Home
         </a>

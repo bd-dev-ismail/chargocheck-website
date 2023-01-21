@@ -28,11 +28,15 @@ const IndustriesServe = () => {
   return (
     <div className="mt-[5rem] mb-[3rem]">
       <div className="text-center mx-auto  sm:max-w-xl md:max-w-full lg:max-w-screen-xl ">
-        <h3 className="text-primary text-3xl font-bold mb-4">
+        <h3
+          style={{ fontSize: "32px" }}
+          className="text-primary  font-bold mb-4"
+        >
           Industries We Serve
         </h3>
         <p className="text-xl font-light">
-          CargoCheck helps logistics and manufacturing professionals go home <br />
+          CargoCheck helps logistics and manufacturing professionals go home{" "}
+          <br />
           safely after a productive day.
         </p>
       </div>

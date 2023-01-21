@@ -2,7 +2,12 @@ const OurStory = () => {
   return (
     <div className="mt-[5rem] mb-[3rem] bg-white">
       <div className="text-center mx-auto  sm:max-w-xl md:max-w-full lg:max-w-screen-xl ">
-        <h3 className="text-primary text-3xl font-bold mb-4">Our Story</h3>
+        <h3
+          style={{ fontSize: "32px" }}
+          className="text-primary  font-bold mb-4"
+        >
+          Our Story
+        </h3>
         <p className="text-xl font-light px-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu
           habitasse vitae sit urna.
@@ -29,7 +34,7 @@ const OurStory = () => {
                   </div>
                   <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-[#D9D9D9]">
                     <h3
-                      style={{ fontSize: "24px" ,color: '#202124'}}
+                      style={{ fontSize: "24px", color: "#202124" }}
                       className="font-bold uppercase"
                     >
                       Date
@@ -42,7 +47,7 @@ const OurStory = () => {
                   </div>
                   <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-[#D9D9D9]">
                     <h3
-                      style={{ fontSize: "24px" ,color: '#202124'}}
+                      style={{ fontSize: "24px", color: "#202124" }}
                       className="font-bold uppercase"
                     >
                       Date
@@ -53,7 +58,6 @@ const OurStory = () => {
                       ipsum primis in faucibus.
                     </p>
                   </div>
-                  
                 </div>
               </div>
             </div>
