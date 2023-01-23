@@ -3,9 +3,18 @@ variables:
   APP_PATH: '$CI_PROJECT_DIR'
   OUTPUT_PATH: '$CI_PROJECT_DIR/out'
 
-deploy:
+deploy_dev:
   only:
     - main
+  stage: deploy
+  image: registry.gitlab.com/static-web-apps/azure-static-web-apps-deploy
+  script:
+    - echo "App deployed successfully."
+
+deploy_production:
+  only:
+    - main
+    - dev
   stage: deploy
   image: registry.gitlab.com/static-web-apps/azure-static-web-apps-deploy
   script:
