@@ -1,11 +1,14 @@
 variables:
-  API_TOKEN: $DEPLOYMENT_TOKEN
   APP_PATH: '$CI_PROJECT_DIR'
   OUTPUT_PATH: '$CI_PROJECT_DIR/out'
 
 deploy_dev:
   only:
-    - main
+    - dev
+  environment:
+    name: production
+  variables:
+    API_TOKEN: $DEPLOYMENT_TOKEN
   stage: deploy
   image: registry.gitlab.com/static-web-apps/azure-static-web-apps-deploy
   script:
@@ -14,7 +17,10 @@ deploy_dev:
 deploy:
   only:
     - main
-    - dev
+  environment:
+    name: production
+  variables:
+    API_TOKEN: $DEPLOYMENT_TOKEN
   stage: deploy
   image: registry.gitlab.com/static-web-apps/azure-static-web-apps-deploy
   script:
