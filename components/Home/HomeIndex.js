@@ -1,5 +1,6 @@
 
 import Banner from './Banner/Banner';
+import GetStarted from './GetStarted/GetStarted';
 import IndustriesServe from './IndustriesServe/IndustriesServe';
 import ModesWeServe from './ModesWeServe/ModesWeServe';
 import Platfrom from './Platfrom/Platfrom';
@@ -13,6 +14,9 @@ const HomeIndex = () => {
         </div>
         <div>
           <WhyCargocheck />
+        </div>
+        <div>
+          <GetStarted/>
         </div>
         <div>
           <Platfrom />
