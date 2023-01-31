@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
@@ -15,7 +15,11 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
+<<<<<<< HEAD
     "swiper": "^8.4.6"
+=======
+    "sharp": "^0.31.3"
+>>>>>>> 672be62f257c70583545b18886f1be25414cdcb6
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
