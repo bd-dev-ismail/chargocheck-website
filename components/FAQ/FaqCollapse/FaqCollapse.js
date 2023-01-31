@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa";
 const FaqCollapse = () => {
   const [open, SetIsOpen] = useState(true);
@@ -24,15 +24,18 @@ const FaqCollapse = () => {
       desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, aliquid suscipit dolor nulla corrupti voluptate? Soluta, eos veritatis ab nihil, reiciendis deserunt qui quam quas aliquid reprehenderit iure? Doloremque animi blanditiis accusamus excepturi aperiam. Cupiditate, iste. Adipisci neque quia voluptatibus possimus. Voluptates reprehenderit nisi tenetur. Nemo repellendus illo nobis iusto.",
     },
   ];
+  // useEffect(()=> 
+  // fetch("")
+  // ,[])
   return (
     <div className="my-[8rem] sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto">
-      <section className="dark:bg-gray-800 dark:text-gray-100">
+      <section className="dark:bg-gray-800 dark:text-gray-100 bg-white">
         <div className="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
           <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  my-4 gap-8">
             {faq?.map((item, idx) => (
               <details key={idx} className="w-full border rounded-lg">
                 <summary
-                  onClick={() => SetIsOpen(false)}
+                  onClick={() => SetIsOpen(!open)}
                   className="px-4 py-4  cursor-pointer focus:outline-none text-primary font-bold flex items-center justify-between"
                   style={{ fontSize: "24px" }}
                 >

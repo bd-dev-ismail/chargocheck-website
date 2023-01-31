@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import SwiperCore, { Autoplay } from "swiper";
 import { Pagination } from "swiper";
-
+// import "./Banner.css";
 
 const Banner = () => {
   SwiperCore.use([Autoplay]);
@@ -19,12 +19,11 @@ const Banner = () => {
       className="mySwiper"
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
-      autoplay
     >
       <SwiperSlide>
         {" "}
         <div
-          className="lg:h-[78vh] h-[65vh] xs:h-[70vh] w-full "
+          className="lg:h-[78vh] h-[80vh]  w-full "
           style={{
             backgroundImage: `linear-gradient(180deg, rgb(0 0 0 / 30%) 0%, rgba(255, 255, 255, 0) 55.59%), url(${banner2.src})`,
             backgroundRepeat: "no-repeat",
@@ -32,7 +31,7 @@ const Banner = () => {
             backgroundPosition: "center",
           }}
         >
-          <div className="flex px-4 py-8 lg:py-10 items-center justify-evenly text-white">
+          <div className="flex  px-4 py-8 lg:py-10 items-center justify-center lg:justify-evenly text-white">
             <div>
               <h3
                 className="text-3xl lg:text-5xl  font-bold my-4"
@@ -62,7 +61,7 @@ const Banner = () => {
       <SwiperSlide>
         {" "}
         <div
-          className="lg:h-[78vh] h-[65vh] xs:h-[70vh] w-full "
+          className="lg:h-[78vh] h-[80vh]  w-full "
           style={{
             backgroundImage: `linear-gradient(180deg, rgb(0 0 0 / 30%) 0%, rgba(255, 255, 255, 0) 55.59%), url(${banner.src})`,
             backgroundRepeat: "no-repeat",
@@ -70,7 +69,7 @@ const Banner = () => {
             backgroundPosition: "center",
           }}
         >
-          <div className="flex px-4 py-5 lg:py-10 items-center justify-evenly text-white">
+          <div className="flex px-4 py-5 lg:py-10 items-center justify-center lg:justify-evenly text-white">
             <div>
               <h3
                 className="text-3xl lg:text-5xl  font-bold my-4"

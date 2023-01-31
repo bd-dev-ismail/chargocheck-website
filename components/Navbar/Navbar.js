@@ -204,9 +204,7 @@ const Navbar = () => {
                         title="Company"
                         className="inline-flex items-center"
                       >
-                        <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                          Chargocheck
-                        </span>
+                        <img src={logo.src} alt="" />
                       </Link>
                     </div>
                     <div>
