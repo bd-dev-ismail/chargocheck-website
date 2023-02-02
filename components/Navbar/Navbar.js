@@ -120,7 +120,7 @@ const Navbar = () => {
       </li>
       <li>
         <Link
-          href="/"
+          href="/pricing"
           className="font-bold text-base flex items-center tracking-wide text-primary"
         >
           Pricing
