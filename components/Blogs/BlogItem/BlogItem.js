@@ -5,8 +5,10 @@ import img4 from "/assets/blog/image 10 (3).png";
 import img5 from "/assets/blog/image 10 (4).png";
 import img6 from "/assets/blog/image 10 (5).png";
 import icon from "/assets/icon/shareIcon.png";
+import { useEffect, useState } from "react";
 
 const BlogItem = () => {
+  const [blogs, setBlogs] = useState([]);
   const blogImg = [
     {
       img: img1,
@@ -51,6 +53,11 @@ const BlogItem = () => {
       publishDate: "Jan, 01 2023",
     },
   ];
+  useEffect(()=> {
+    fetch("http://40.76.241.63/api/blogs")
+    .then(res => res.json())
+    .then(data => setBlogs(data.data))
+  },[])
   return (
     <>
       {blogImg.map((item, idx) => (
