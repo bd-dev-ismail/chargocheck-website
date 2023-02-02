@@ -53,33 +53,38 @@ const BlogItem = () => {
       publishDate: "Jan, 01 2023",
     },
   ];
-  useEffect(()=> {
-    fetch("http://40.76.241.63/api/blogs")
-    .then(res => res.json())
-    .then(data => setBlogs(data.data))
-  },[])
+  useEffect(() => {
+    fetch("http://40.76.241.63/api/blogs?populate=*")
+      .then((res) => res.json())
+      .then((data) => setBlogs(data.data));
+  }, []);
+  console.log(blogs, "blog");
   return (
     <>
-      {blogImg.map((item, idx) => (
+      {blogs.map((item, idx) => (
         <div
           className="card card-compact my-5 relative w-96 bg-base-100 shadow-xl"
           key={idx}
         >
           <figure>
-            <img src={item.img.src} />
+            <img
+              src={`http://cms-cargocheck.eastus.cloudapp.azure.com${item?.attributes?.dispayImage?.data?.attributes?.url}`}
+            />
           </figure>
           <div className="card-body">
             <p className="text-secondary font-light mb-2">
-              {item.readTime} read
+              {item?.attributes?.readTime} read
             </p>
             <h2
               className="card-title font-bold pb-2 text-primary"
               style={{ fontSize: "2rem" }}
             >
-              {item.title}
+              {item.attributes?.title}
             </h2>
-            <p className="text-secondary font-light text-xl">{item.desc}</p>
-            <p className="text-secondary font-bold py-6">{item.publishDate}</p>
+            <p className="text-secondary font-light text-xl">
+              {item.attributes?.shortDescription}
+            </p>
+            <p className="text-secondary font-bold py-6">Jan, 01 2023</p>
             <div>
               <img
                 src={icon.src}
