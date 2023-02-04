@@ -6,7 +6,7 @@ import PricingBanner from "./PricingBanner";
 
 const PricingIndex = () => {
   return (
-    <div>
+    <div className="bg-white">
       <div>
         <Navbar />
       </div>
