@@ -12,7 +12,7 @@ const BlogItem = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    fetch('http://cms.cargocheck.com/api/blogs?populate=*')
+    fetch('https://cms.cargocheck.com/api/blogs?populate=*')
       .then((res) => res.json())
       .then((data) => setBlogs(data.data));
   }, []);
@@ -24,7 +24,7 @@ const BlogItem = () => {
         <Link href={'/blog-details'} key={idx}>
           <div className="card card-compact my-5 relative w-96 bg-base-100 shadow-xl">
             <figure>
-              <img src={`http://cms-cargocheck.eastus.cloudapp.azure.com${item?.attributes?.dispayImage?.data?.attributes?.url}`} />
+              <img src={`https://cms.cargocheck.com${item?.attributes?.dispayImage?.data?.attributes?.url}`} />
             </figure>
             <div className="card-body">
               <p className="text-secondary font-light mb-2">{item?.attributes?.readTime} read</p>
