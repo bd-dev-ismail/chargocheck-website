@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { FaMinus, FaPlus } from "react-icons/fa";
+import { useEffect, useState } from 'react';
+import { FaMinus, FaPlus } from 'react-icons/fa';
 const FaqCollapse = () => {
   const [open, SetIsOpen] = useState(true);
   const [faqs, setFaqs] = useState([]);
@@ -23,7 +23,7 @@ const FaqCollapse = () => {
                     <summary
                       
                       className="px-4 py-4  cursor-pointer focus:outline-none text-primary font-bold flex items-center justify-between"
-                      style={{ fontSize: "24px" }}
+                      style={{ fontSize: '24px' }}
                     >
                       {item?.attributes?.question}
                       <FaPlus /> 
