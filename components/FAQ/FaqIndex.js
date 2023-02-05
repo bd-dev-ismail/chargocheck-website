@@ -14,7 +14,7 @@ const FaqIndex = () => {
        <div>
         <FaqBanner/>
         </div> 
-        <div>
+        <div className="bg-white">
           <FaqCollapse/>
         </div>
         <div>

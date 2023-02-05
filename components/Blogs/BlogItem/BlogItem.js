@@ -10,22 +10,23 @@ import Link from "next/link";
 
 const BlogItem = () => {
   const [blogs, setBlogs] = useState([]);
- 
+  const url = process.env.NEXT_PUBLIC_URL;
+
   useEffect(() => {
-    fetch("http://40.76.241.63/api/blogs?populate=*")
+    fetch(`${url}/api/blogs?populate=*`)
       .then((res) => res.json())
       .then((data) => setBlogs(data.data));
   }, []);
-  console.log(blogs, "blog");
-  
+
+  console.log(blogs);
   return (
     <>
       {blogs.map((item, idx) => (
-        <Link href={"/blog-details"} key={idx}>
+        <Link href={`/blog/${item.id}`} key={idx}>
           <div className="card card-compact my-5 relative w-96 bg-base-100 shadow-xl">
             <figure>
               <img
-                src={`http://cms-cargocheck.eastus.cloudapp.azure.com${item?.attributes?.dispayImage?.data?.attributes?.url}`}
+                src={`${url}${item?.attributes?.dispayImage?.data?.attributes?.url}`}
               />
             </figure>
             <div className="card-body">
