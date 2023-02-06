@@ -16,44 +16,34 @@ const Navbar = () => {
             tabIndex={0}
             className="font-bold cursor-pointer text-base flex items-center tracking-wide text-primary"
           >
-            Industries <FaAngleDown className="ml-3" />
+            Industries <FaAngleDown className="ml-1" />
           </label>
           <ul
             tabIndex={0}
-            className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-64"
+            className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-60"
           >
             <li>
-              <Link href="/industries" className="flex flex-row items-center">
-                <img
-                  src={dropdownLogo.src}
-                  alt=""
-                  className="w-10 h-10 rounded-lg bg-[#D6DEE6] p-2"
-                />
-                <p className="text-primary font-semibold text-lg">
-                  Chemical Supplier
-                </p>
+              <Link
+                href="/industries"
+                className="font-bold cursor-pointer text-base text-primary tracking-wide"
+              >
+                Chemical Supplier
               </Link>
             </li>
             <li>
-              <Link href="/industries" className="flex flex-row items-center">
-                <img
-                  src={truckLogo.src}
-                  alt=""
-                  className="w-10 h-10 rounded-lg bg-[#D6DEE6] p-2"
-                />
-                <p className="text-primary font-semibold text-lg">
-                  Transportation
-                </p>
+              <Link
+                href="/industries"
+                className="font-bold cursor-pointer text-base text-primary tracking-wide"
+              >
+                Transportation
               </Link>
             </li>
             <li>
-              <Link href="/industries" className="flex flex-row items-center">
-                <img
-                  src={dropdownLogo.src}
-                  alt=""
-                  className="w-10 h-10 rounded-lg bg-[#D6DEE6] p-2"
-                />
-                <p className="text-primary font-semibold text-lg">Goverment</p>
+              <Link
+                href="/industries"
+                className="font-bold cursor-pointer text-base text-primary tracking-wide"
+              >
+                Goverment
               </Link>
             </li>
           </ul>
@@ -73,30 +63,26 @@ const Navbar = () => {
             tabIndex={1}
             className="font-bold cursor-pointer text-base flex items-center tracking-wide text-primary"
           >
-            Resources <FaAngleDown className="ml-3" />
+            Resources <FaAngleDown className="ml-1" />
           </label>
           <ul
             tabIndex={1}
-            className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-64"
+            className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-58"
           >
             <li>
-              <Link href="/blog" className="flex flex-row items-center">
-                <img
-                  src={dropdownLogo.src}
-                  alt=""
-                  className="w-10 h-10 rounded-lg  bg-[#D6DEE6] p-2"
-                />
-                <p className="text-primary font-semibold text-lg">Blog</p>
+              <Link
+                href="/blog"
+                className="font-bold cursor-pointer text-base text-primary tracking-wide"
+              >
+                Blog
               </Link>
             </li>
             <li>
-              <Link href="/faq" className="flex flex-row items-center">
-                <img
-                  src={truckLogo.src}
-                  alt=""
-                  className="w-10 h-10 rounded-lg bg-[#D6DEE6] p-2"
-                />
-                <p className="text-primary font-semibold text-lg">FAQ</p>
+              <Link
+                href="/faq"
+                className="font-bold cursor-pointer text-base text-primary tracking-wide"
+              >
+                Faq
               </Link>
             </li>
           </ul>
@@ -111,21 +97,44 @@ const Navbar = () => {
         </Link>
       </li> */}
       <li>
-        <Link
-          href="/about"
-          className="font-bold text-base flex items-center tracking-wide text-primary"
-        >
-          About
-        </Link>
+        <div className="dropdown  dropdown-hover">
+          <label
+            tabIndex={1}
+            className="font-bold cursor-pointer text-base flex items-center tracking-wide text-primary"
+          >
+            About <FaAngleDown className="ml-1" />
+          </label>
+          <ul
+            tabIndex={1}
+            className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-58"
+          >
+            <li>
+              <Link
+                href="/about"
+                className="font-bold cursor-pointer text-base text-primary tracking-wide"
+              >
+                Company
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/contact-us"
+                className="font-bold cursor-pointer text-base text-primary tracking-wide"
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
       </li>
-      <li>
+      {/* <li>
         <Link
           href="/pricing"
           className="font-bold text-base flex items-center tracking-wide text-primary"
         >
           Pricing
         </Link>
-      </li>
+      </li> */}
     </>
   );
   const menuItem2 = (
@@ -140,10 +149,10 @@ const Navbar = () => {
       </li>
       <li>
         <Link
-          href="/"
-          className="font-normal text-base btn btn-primary rounded-full text-white"
+          href="/contact-us"
+          className=" text-base btn btn-primary capitalize font-bold rounded-full text-white"
         >
-          Get Started
+          Contact
         </Link>
       </li>
     </>
@@ -164,7 +173,7 @@ const Navbar = () => {
                 Chargocheck
               </span> */}
             </Link>
-            <ul className="flex items-center hidden gap-16 lg:flex">
+            <ul className="flex items-center hidden gap-8 lg:flex">
               {menuItem}
             </ul>
           </div>
