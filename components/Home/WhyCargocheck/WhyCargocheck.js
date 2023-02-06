@@ -1,8 +1,7 @@
-
-import icon1 from '/assets/icon/know.png';
-import icon2 from '/assets/icon/point.png';
-import icon3 from '/assets/icon/scan.png';
-import icon4 from '/assets/icon/improved.png';
+import icon1 from "/assets/icon/know.png";
+import icon2 from "/assets/icon/point.png";
+import icon3 from "/assets/icon/scan.png";
+import icon4 from "/assets/icon/improved.png";
 const WhyCargocheck = () => {
   const itemList = [
     {
@@ -25,6 +24,11 @@ const WhyCargocheck = () => {
       desc: "Clear directions communicated in a consistent format reduces the potential for confusion.",
       icon: icon4,
     },
+    {
+      name: "Instantly available PODs",
+      desc: "Office staff can see the status of current shipments to help keep operations on track",
+      icon: icon2,
+    },
   ];
   return (
     <div className="mt-[5rem] mb-[3rem]">
@@ -44,7 +48,7 @@ const WhyCargocheck = () => {
           “how” for each shipment.
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 my-[2rem] gap-16 mx-auto  sm:max-w-xl md:max-w-full lg:max-w-screen-xl ">
+      <div className="grid grid-cols-1 lg:grid-cols-5 my-[2rem] gap-16 mx-auto  sm:max-w-xl md:max-w-full lg:max-w-screen-xl ">
         {itemList.map((item, idx) => (
           <div
             key={idx}
