@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import SwiperCore, { Autoplay } from "swiper";
 import { Pagination } from "swiper";
+import Link from "next/link";
 // import "./Banner.css";
 
 const Banner = () => {
@@ -45,13 +46,12 @@ const Banner = () => {
                 & packaged chemicals, know ETAs, and confirm the <br /> right
                 product with electronic proof of delivery
               </p>
-              <a
-                href="/"
+              <Link
+                href="/contact"
                 className="font-normal normal-case text-base btn btn-primary rounded-full text-white"
               >
-                Find out how
-                <FaArrowRight className="ml-3" />
-              </a>
+                Find out how <FaArrowRight className="ml-3" />
+              </Link>
             </div>
             <div className="hidden lg:block">
               <img src={iphone.src} alt="" />
@@ -84,12 +84,12 @@ const Banner = () => {
                 & packaged chemicals, know ETAs, and confirm the <br /> right
                 product with electronic proof of delivery
               </p>
-              <a
-                href="/"
+              <Link
+                href="/contact"
                 className="font-normal normal-case text-base btn btn-primary rounded-full text-white"
               >
                 Find out how <FaArrowRight className="ml-3" />
-              </a>
+              </Link>
             </div>
             <div className="hidden lg:block">
               <img src={iphone.src} alt="" />

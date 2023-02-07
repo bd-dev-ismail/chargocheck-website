@@ -118,7 +118,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/contact-us"
+                href="/contact"
                 className="font-bold cursor-pointer text-base text-primary tracking-wide"
               >
                 Contact
@@ -149,7 +149,7 @@ const Navbar = () => {
       </li>
       <li>
         <Link
-          href="/contact-us"
+          href="/contact"
           className=" text-base btn btn-primary capitalize font-bold rounded-full text-white"
         >
           Contact
