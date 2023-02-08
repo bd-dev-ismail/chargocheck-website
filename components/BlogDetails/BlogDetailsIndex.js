@@ -1,4 +1,4 @@
-import React from "react";
+
 import Footer from "../Footer/Footer";
 import LetUs from "../Industries/LetUs/LetUs";
 import Loader from "../Loader/Loader";

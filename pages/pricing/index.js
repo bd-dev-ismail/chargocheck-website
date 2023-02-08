@@ -1,6 +1,6 @@
 import PricingIndex from "@/components/Pricing/PricingIndex";
 import Head from "next/head";
-import React from "react";
+
 
 const index = () => {
   return (

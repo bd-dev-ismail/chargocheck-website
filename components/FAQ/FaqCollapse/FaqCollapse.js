@@ -19,7 +19,7 @@ const FaqCollapse = () => {
     <div className="my-[8rem] sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto">
       <section className=" bg-white">
         <div className="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
-          <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  my-4 gap-8">
+          <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1  my-4 gap-8">
             {loading && <Loader />}
             {faqs?.map(
               (item, idx) => (
@@ -48,12 +48,14 @@ function Faq({ item }) {
           {item?.attributes?.question}
           {open ? <FaPlus /> : <FaMinus />}
         </summary>
-        <p
-          style={{ paddingTop: "20px" }}
-          className="px-4 py-6 pt-0 ml-4 -mt-4 text-secondary text-lg font-light"
-        >
-          {item?.attributes?.answer}
-        </p>
+        {!open && (
+          <p
+            style={{ paddingTop: "20px" }}
+            className="px-4 py-6 pt-0 ml-4 -mt-4 text-secondary text-lg font-light"
+          >
+            {item?.attributes?.answer}
+          </p>
+        )}
       </details>
     </>
   );

@@ -2,11 +2,11 @@ import banner from "/assets/banner.png";
 import banner2 from "/assets/banner1.png";
 import { FaArrowRight } from "react-icons/fa";
 import iphone from "/assets/Wood-Hand.png";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import SwiperCore, { Autoplay } from "swiper";
-import { Pagination } from "swiper";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import "swiper/css";
+// import "swiper/css/pagination";
+// import SwiperCore, { Autoplay } from "swiper";
+// import { Pagination } from "swiper";
 import Link from "next/link";
 // import "./Banner.css";
 

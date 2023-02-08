@@ -24,6 +24,7 @@ const blogDetails = () => {
 
     // console.log(router.query.id, "data");
   }, [router.query.id, router.isReady]);
+  
   return (
     <div>
       <Head>

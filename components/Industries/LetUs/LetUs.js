@@ -5,7 +5,7 @@ const LetUs = () => {
   return (
     <div
       style={{ backgroundImage: `url(${bg.src})` }}
-      className="lg:h-[23.1rem] h-[28rem] mt-[7rem]  flex justify-center items-center w-full"
+      className="lg:h-[23.1rem] h-[26rem] mt-[7rem]  flex justify-center items-center w-full"
     >
       <div className="text-center">
         <div>
@@ -14,19 +14,14 @@ const LetUs = () => {
             style={{ fontSize: "40px" }}
             className="font-bold text-primary mb-7"
           >
-            Let us help you simplify your logistics
+            Map your route to safer chemical logistics
           </h3>
-          <p
-            style={{ fontSize: "24px" }}
-            className="text-secondary font-light mb-[5rem]"
-          >
-            Complete solution for your logistics problems
-          </p>
+          
           <Link
             href="/contact"
             className="font-normal text-base btn btn-primary rounded-full text-white"
           >
-            Get Started <FaArrowRight className="ml-3" />
+             Start Here<FaArrowRight className="ml-3" />
           </Link>
         </div>
       </div>

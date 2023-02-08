@@ -4,8 +4,10 @@ import Navbar from "../Navbar/Navbar";
 import AboutBanner from "./AboutBanner/AboutBanner";
 import AboutChargocheck from "./AboutChargocheck/AboutChargocheck";
 import MeetWarrios from "./MeetWarriors/MeetWarrios";
+import Mission from "./Mission/Mission";
 import OurStory from "./OurStory/OurStory";
 import WorkCulture from "./WorkCulture/WorkCulture";
+import WorkWithUs from "./WorkWithUs/WorkWithUs";
 
 const AboutIndex = () => {
   return (
@@ -19,13 +21,19 @@ const AboutIndex = () => {
       <div>
         <AboutChargocheck />
       </div>
-      <div>
+      {/* <div>
         <OurStory />
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <WorkCulture />
+      </div> */}
+      <div>
+        <Mission />
       </div>
       <div>
+        <WorkWithUs />
+      </div>
+      <div className="hidden lg:block">
         <MeetWarrios />
       </div>
       <div>
