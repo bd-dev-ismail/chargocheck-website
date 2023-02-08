@@ -1,9 +1,12 @@
-import { useRouter } from "next/router";
-import { FaAngleRight } from "react-icons/fa";
+// import { useRouter } from "next/router";
+// import { FaAngleRight } from "react-icons/fa";
+import banner from '../../../assets/contactBanner.png';
+
 const ContactBanner = () => {
-  const router = useRouter();
+  // const router = useRouter();
 return (
-    <div>
+  <div>
+    {/* <div>
       <div className="h-[26rem]  relative bg-primary w-[100vw] flex justify-center items-center">
         <div className="text-white text-center">
           <h3 style={{ fontSize: "40px" }} className="font-bold">
@@ -20,12 +23,26 @@ return (
           Home
         </a>
         <FaAngleRight />
-        <a className="cursor-pointer" onClick={() => router.push("/contact-us")}>
+        <a
+          className="cursor-pointer"
+          onClick={() => router.push("/contact-us")}
+        >
           Contact
         </a>
       </div>
-    </div>
-  );
+    </div> */}
+    <div
+    id='contact-banner'
+      style={{
+        background: `url(${banner.src})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover"
+        
+      }}
+      className="h-[40rem]"
+    ></div>
+  </div>
+);
 };
 
 export default ContactBanner;

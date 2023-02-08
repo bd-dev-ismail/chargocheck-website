@@ -6,13 +6,25 @@ const ContactItem = () => {
         name: "Sales",
         desc: "CargoCheckTM offers specialized assistance to chemical suppliers to ensure safe and compliant transportation by verifying that the right product is loaded/unloaded into the right container.",
         icon: icon1,
-        btnName: "Let's Chat",
+        btnName: "Schedule a Call",
       },
       {
         name: "Support",
         desc: "CargoCheckTM provides performance analysis and real-time visibility to manufacturers and distributors to improve their operations' efficiency, accuracy, and competitiveness.",
         icon: icon2,
-        btnName: "Get Support",
+        btnName: "Get Help",
+      },
+      {
+        name: "Media",
+        desc: "Curious about CargoCheck and our mission to save resources and empower safe teamwork? Let’s talk.",
+        icon: icon1,
+        btnName: "Let's Chat",
+      },
+      {
+        name: "Patnership",
+        desc: "We’re always happy to explore ways to work smarter, not harder. Let’s connect on how we can help our mutual customers, suppliers, or community.",
+        icon: icon2,
+        btnName: "Connect",
       },
     ];
     return (
