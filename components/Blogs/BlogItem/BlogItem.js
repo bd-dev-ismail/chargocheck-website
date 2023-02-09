@@ -30,13 +30,19 @@ const BlogItem = () => {
       {loading && <Loader />}
       {blogs.map((item, idx) => (
         <Link href={`/blog/${item.id}`} key={idx}>
-          <div className="card card-compact my-5 relative w-96 bg-base-100 shadow-xl">
+          <div
+            style={{
+              background: "rgba(50, 152, 255, 0.05)",
+              backdropFilter: "blur(5px)",
+            }}
+            className="card   rounded-lg  card-compact my-5 relative w-96  shadow-xl"
+          >
             <figure>
               <img
                 src={`${url}${item?.attributes?.dispayImage?.data?.attributes?.url}`}
               />
             </figure>
-            <div className="card-body">
+            <div className="card-body  p-5">
               <p className="text-secondary font-light mb-2">
                 {item?.attributes?.readTime} read
               </p>

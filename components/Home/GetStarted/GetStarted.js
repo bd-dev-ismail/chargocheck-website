@@ -8,10 +8,13 @@ const GetStarted = () => {
           style={{ fontSize: "32px" }}
           className="text-primary font-bold mb-4"
         >
-          Get Started
+          Simple Steps to Safer Shipments
         </h3>
         <p className="text-xl font-light">
-          Join CargoCheck Platform to manage logistics
+          CargoCheck is designed to readily complement your existing ERP, TMS,
+          and in-house databases. We work with your team to ensure seamless,
+          secure data sharing with only the partners you choose with these easy
+          steps
         </p>
       </div>
       <div>

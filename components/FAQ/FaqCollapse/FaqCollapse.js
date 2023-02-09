@@ -19,11 +19,11 @@ const FaqCollapse = () => {
     <div className="my-[8rem] sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto">
       <section className=" bg-white">
         <div className="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
-          <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1  my-4 gap-8">
+          <div className=" grid grid-cols-1 lg:grid-cols-2 gap-8">
             {loading && <Loader />}
             {faqs?.map(
               (item, idx) => (
-                console.log(item), (<Faq item={item} key={idx} />)
+                console.log(item), (<Faq item={item} key={idx} idx={idx} />)
               )
             )}
           </div>
@@ -35,28 +35,40 @@ const FaqCollapse = () => {
 
 export default FaqCollapse;
 
-function Faq({ item }) {
+function Faq({ item, idx }) {
   const [open, SetIsOpen] = useState(true);
   return (
     <>
-      <details className="w-full border rounded-lg">
-        <summary
-          onClick={() => SetIsOpen(!open)}
-          className="px-4 py-4  cursor-pointer focus:outline-none text-primary font-bold flex items-center justify-between"
-          style={{ fontSize: "24px" }}
+      <div>
+        <details
+          style={{
+            boxShadow: "2px 2px 10px rgba(0, 51, 102, 0.15)",
+          }}
+          className={`${
+            !open ? "w-full border  max-h-[15rem] rounded-lg" : undefined
+          }`}
         >
-          {item?.attributes?.question}
-          {open ? <FaPlus /> : <FaMinus />}
-        </summary>
-        {!open && (
+          <summary
+            onClick={() => SetIsOpen(!open)}
+            className="px-4 py-4  cursor-pointer focus:outline-none text-primary font-bold flex items-center justify-between"
+            style={{ fontSize: "24px" }}
+          >
+            {item?.attributes?.question}
+            {open ? <FaPlus /> : <FaMinus />}
+          </summary>
+
           <p
             style={{ paddingTop: "20px" }}
-            className="px-4 py-6 pt-0 ml-4 -mt-4 text-secondary text-lg font-light"
+            className={`${
+              !open
+                ? "px-4 py-6  pt-0 ml-4  -mt-4 text-secondary text-lg font-light"
+                : undefined
+            }`}
           >
             {item?.attributes?.answer}
           </p>
-        )}
-      </details>
+        </details>
+      </div>
     </>
   );
 }

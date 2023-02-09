@@ -4,7 +4,7 @@ import SingleSection from "./SingleSection";
 const IndustriesSections = () => {
   const [btn, setBtn] = useState("Goverment");
   return (
-    <div className="mt-[3rem] mb-[5rem]">
+    <div className="mt-[3rem] mb-[2rem]">
       <div className="flex justify-center items-center gap-8">
         <h3
         

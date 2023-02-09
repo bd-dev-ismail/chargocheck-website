@@ -40,7 +40,7 @@ const VerticalBanner = () => {
             Find out how <FaArrowRight className="ml-1" />
           </Link>
         </div>
-        <div className=" lg:h-[73.2vh] flex items-center gap-4">
+        <div className=" lg:h-[71.2vh] flex items-center gap-4">
           {/* <NewsTicker
             rowHeight={100}
             maxRows={20}

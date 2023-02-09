@@ -1,7 +1,13 @@
 
 const VansBackCard = ({ containers, btn }) => {
   return (
-    <div className="flex bg-[#00336629] p-5 rounded-xl lg:flex-row flex-col text-center justify-center lg:text-start items-center gap-8">
+    <div
+      style={{
+        background: "rgba(50, 152, 255, 0.05)",
+        backdropFilter: "blur(5px)",
+      }}
+      className="flex  p-5 rounded-xl lg:flex-row flex-col text-center justify-center lg:text-start items-center gap-8"
+    >
       <div
         className="h-[266px] w-[237px] relative"
         style={{

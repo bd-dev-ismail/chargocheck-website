@@ -37,8 +37,12 @@ const Mission = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 my-[2rem] gap-16 mx-auto  sm:max-w-xl md:max-w-full lg:max-w-screen-xl ">
         {itemList.map((item, idx) => (
           <div
+            style={{
+              background: "rgba(50, 152, 255, 0.05)",
+              backdropFilter: "blur(5px)",
+            }}
             key={idx}
-            className="my-10  flex flex-col justify-center lg:justify-start lg:items-start items-center"
+            className="my-10 p-5 rounded-lg   flex flex-col justify-center lg:justify-start lg:items-start items-center"
           >
             <div>
               <img

@@ -8,12 +8,12 @@ const Platfrom = () => {
             style={{ fontSize: "32px" }}
             className="text-primary font-bold mb-4"
           >
-            CargoCheck Platform
+            The Pocket Tool for Precise Deliveries
           </h3>
           <p className="text-xl font-light">
-            Access the vetted, member’s only network of trusted chemical
-            suppliers, manufacturers, <br /> municipalities, and transportation
-            pros who put safety first for every shipment.
+            Support Drivers and Operators 24/7 with this powerful pocket
+            reference for what makes a perfect delivery for each unique paring
+            of product, place, procedure, paperwork, and people.
           </p>
         </div>
         <div>
