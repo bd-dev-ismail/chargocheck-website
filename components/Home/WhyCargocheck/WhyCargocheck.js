@@ -82,7 +82,13 @@ const WhyCargocheck = () => {
       <div className="mx-auto mt-[3rem]  lg:hidden  sm:max-w-xl md:max-w-full">
         <div>
           {btn === "Step 1" && (
-            <div className="bg-neutral p-5 rounded-lg">
+            <div
+              style={{
+                background: "rgba(50, 152, 255, 0.05)",
+                backdropFilter: "blur(5px)",
+              }}
+              className=" p-5 rounded-lg"
+            >
               <img src={icon1.src} alt="" />
               <h3
                 style={{ fontSize: "14px" }}
@@ -99,15 +105,25 @@ const WhyCargocheck = () => {
           {btn !== "Step 1" && (
             <h3
               onClick={() => setBtn("Step 1")}
-              style={{ fontSize: "14px" }}
-              className="text-primary mb-5 bg-neutral p-5 font-bold rounded-lg"
+              style={{
+                background: "rgba(50, 152, 255, 0.05)",
+                backdropFilter: "blur(5px)",
+                fontSize: "14px",
+              }}
+              className="text-primary mb-5  p-5 font-bold rounded-lg"
             >
               Know before you go
             </h3>
           )}
 
           {btn === "Step 2" && (
-            <div className="bg-neutral p-5 rounded-lg">
+            <div
+              style={{
+                background: "rgba(50, 152, 255, 0.05)",
+                backdropFilter: "blur(5px)",
+              }}
+              className=" p-5 rounded-lg"
+            >
               <img src={icon2.src} alt="" />
               <h3
                 style={{ fontSize: "14px" }}
@@ -124,14 +140,24 @@ const WhyCargocheck = () => {
           {btn !== "Step 2" && (
             <h3
               onClick={() => setBtn("Step 2")}
-              style={{ fontSize: "14px" }}
-              className="text-primary my-5 bg-neutral p-5 font-bold rounded-lg"
+              style={{
+                background: "rgba(50, 152, 255, 0.05)",
+                backdropFilter: "blur(5px)",
+                fontSize: "14px",
+              }}
+              className="text-primary my-5  p-5 font-bold rounded-lg"
             >
               Point-to-point visibility
             </h3>
           )}
           {btn === "Step 3" && (
-            <div className="bg-neutral p-5 rounded-lg">
+            <div
+              style={{
+                background: "rgba(50, 152, 255, 0.05)",
+                backdropFilter: "blur(5px)",
+              }}
+              className=" p-5 rounded-lg"
+            >
               <img src={icon3.src} alt="" />
               <h3
                 style={{ fontSize: "14px" }}
@@ -148,14 +174,24 @@ const WhyCargocheck = () => {
           {btn !== "Step 3" && (
             <h3
               onClick={() => setBtn("Step 3")}
-              style={{ fontSize: "14px" }}
-              className="text-primary my-5 bg-neutral p-5 font-bold rounded-lg"
+              style={{
+                background: "rgba(50, 152, 255, 0.05)",
+                backdropFilter: "blur(5px)",
+                fontSize: "14px",
+              }}
+              className="text-primary my-5  p-5 font-bold rounded-lg"
             >
               Enhanced safety
             </h3>
           )}
           {btn === "Step 4" && (
-            <div className="bg-neutral p-5 rounded-lg">
+            <div
+              style={{
+                background: "rgba(50, 152, 255, 0.05)",
+                backdropFilter: "blur(5px)",
+              }}
+              className=" p-5 rounded-lg"
+            >
               <img src={icon4.src} alt="" />
               <h3
                 style={{ fontSize: "14px" }}
@@ -172,8 +208,12 @@ const WhyCargocheck = () => {
           {btn !== "Step 4" && (
             <h3
               onClick={() => setBtn("Step 4")}
-              style={{ fontSize: "14px" }}
-              className="text-primary my-5 bg-neutral p-5 font-bold rounded-lg"
+              style={{
+                background: "rgba(50, 152, 255, 0.05)",
+                backdropFilter: "blur(5px)",
+                fontSize: "14px",
+              }}
+              className="text-primary my-5  p-5 font-bold rounded-lg"
             >
               Improved efficiency
             </h3>

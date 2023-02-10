@@ -17,7 +17,13 @@ const GetStartedMobile = () => {
       {" "}
       <SwiperSlide>
         {" "}
-        <div className="my-10 bg-neutral h-[34rem] rounded-lg p-5 flex flex-col justify-center lg:justify-start lg:items-start items-center">
+        <div
+          style={{
+            background: "rgba(50, 152, 255, 0.05)",
+            backdropFilter: "blur(5px)",
+          }}
+          className="my-10  h-[34rem] rounded-lg p-5 flex flex-col justify-center lg:justify-start lg:items-start items-center"
+        >
           {/* <div
                       style={{ fontSize: "1rem" }}
                       className="font-bold uppercase text-primary"
@@ -39,7 +45,13 @@ const GetStartedMobile = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="my-10 bg-neutral  h-[34rem] rounded-lg p-5  flex flex-col justify-center lg:justify-start lg:items-start items-center">
+        <div
+          style={{
+            background: "rgba(50, 152, 255, 0.05)",
+            backdropFilter: "blur(5px)",
+          }}
+          className="my-10   h-[34rem] rounded-lg p-5  flex flex-col justify-center lg:justify-start lg:items-start items-center"
+        >
           {/* <div
                         style={{ fontSize: "1rem" }}
                         className="font-bold uppercase text-primary"
@@ -78,7 +90,13 @@ const GetStartedMobile = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="my-10 bg-neutral h-[34rem] rounded-lg p-5  flex flex-col justify-center lg:justify-start lg:items-start items-center">
+        <div
+          style={{
+            background: "rgba(50, 152, 255, 0.05)",
+            backdropFilter: "blur(5px)",
+          }}
+          className="my-10  h-[34rem] rounded-lg p-5  flex flex-col justify-center lg:justify-start lg:items-start items-center"
+        >
           {/* <div
                         style={{ fontSize: "1rem" }}
                         className="font-bold uppercase text-primary"
@@ -100,7 +118,13 @@ const GetStartedMobile = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="my-10 h-[34rem] bg-neutral rounded-lg p-5 flex flex-col justify-center lg:justify-start lg:items-start items-center">
+        <div
+          style={{
+            background: "rgba(50, 152, 255, 0.05)",
+            backdropFilter: "blur(5px)",
+          }}
+          className="my-10 h-[34rem]  rounded-lg p-5 flex flex-col justify-center lg:justify-start lg:items-start items-center"
+        >
           {/* <div
                         style={{ fontSize: "1rem" }}
                         className="font-bold uppercase text-primary"
@@ -123,7 +147,13 @@ const GetStartedMobile = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="my-10 h-[34rem] bg-neutral rounded-lg p-5 flex flex-col justify-center lg:justify-start lg:items-start items-center">
+        <div
+          style={{
+            background: "rgba(50, 152, 255, 0.05)",
+            backdropFilter: "blur(5px)",
+          }}
+          className="my-10 h-[34rem]  rounded-lg p-5 flex flex-col justify-center lg:justify-start lg:items-start items-center"
+        >
           {/* <div
                         style={{ fontSize: "1rem" }}
                         className="font-bold uppercase text-primary"
