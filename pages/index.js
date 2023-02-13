@@ -5,6 +5,7 @@ import Footer from "@/components/Footer/Footer";
 import HomeIndex from "@/components/Home/HomeIndex";
 const inter = Inter({ subsets: ["latin"] });
 import "regenerator-runtime/runtime.js";
+
 export default function Home() {
   return (
     <div className="bg-white">

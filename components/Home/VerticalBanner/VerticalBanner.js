@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
-
+import Slider from "react-slick";
 import img1 from "../../../assets/banner-images/img1.png";
 import img2 from "../../../assets/banner-images/img2.png";
 import img3 from "../../../assets/banner-images/img3.png";
@@ -9,8 +9,26 @@ import img5 from "../../../assets/banner-images/img5.png";
 import img6 from "../../../assets/banner-images/img6.png";
 import vertical1 from "../../../assets/banner-images/vertical1.png";
 import vertical2 from "../../../assets/banner-images/vertical2.png";
-// import NewsTicker from "react-advanced-news-ticker";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 const VerticalBanner = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    vertical: true,
+    verticalSwiping: true,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 500,
+    beforeChange: function (currentSlide, nextSlide) {
+      console.log("before change", currentSlide, nextSlide);
+    },
+    afterChange: function (currentSlide) {
+      console.log("after change", currentSlide);
+    },
+  };
   return (
     <div
       style={{
@@ -40,44 +58,28 @@ const VerticalBanner = () => {
             Find out how <FaArrowRight className="ml-1" />
           </Link>
         </div>
-        <div className=" lg:h-[71.2vh] flex items-center gap-4">
-          {/* <NewsTicker
-            rowHeight={100}
-            maxRows={20}
-            speed={600}
 
-            // direction={Directions.UP}
-            duration={4000}
-            autoStart={true}
-            pauseOnHover={false}
-            id="myId"
-            className=" lg:h-[90.8vh] w-full gap-4 grid grid-col-2"
-          >
-            <img src={img1.src} alt="" />
-            <img src={vertical1.src} alt="" className="my-2" />
-            <img src={img3.src} alt="" className="my-2" />
-            <img src={img5.src} alt="" className="my-2" />
-            <img src={img2.src} alt="" className="my-2" />
-
+        <div className=" lg:h-[68.2vh]">
+          <div className="flex items-center gap-4">
+            <img src={img1.src} alt="" className="h-[120px]" />
             <img src={img2.src} alt="" />
-            <img src={vertical2.src} alt="" className="my-2" />
-            <img src={img4.src} alt="" className="my-2" />
-            <img src={img6.src} alt="" className="my-2" />
-            <img src={img1.src} alt="" className="my-2" />
-          </NewsTicker> */}
-          <div>
-            <img src={img1.src} alt="" />
-            <img src={vertical1.src} alt="" className="my-2" />
-            <img src={img3.src} alt="" className="my-2" />
-            <img src={img5.src} alt="" className="my-2" />
-            <img src={img2.src} alt="" className="my-2" />
+            {/* <img src={vertical1.src} alt="" className="my-2" />
+              <img src={img3.src} alt="" className="my-2" />
+              <img src={img5.src} alt="" className="my-2" />
+              <img src={img2.src} alt="" className="my-2" /> */}
           </div>
+          <div className="flex items-center gap-4 mt-2">
+            <img src={vertical1.src} alt="" className="-mt-20"/>
+            <img src={vertical2.src} alt="" />
+            {/* <img src={img3.src} alt="" className="my-2" />
+              <img src={img5.src} alt="" className="my-2" />
+              <img src={img2.src} alt="" className="my-2" /> */}
+          </div>
+
           <div>
-            <img src={img2.src} alt="" />
-            <img src={vertical2.src} alt="" className="my-2" />
-            <img src={img4.src} alt="" className="my-2" />
-            <img src={img6.src} alt="" className="my-2" />
-            <img src={img1.src} alt="" className="my-2" />
+            {/* <img src={img4.src} alt="" className="my-2" />
+              <img src={img6.src} alt="" className="my-2" />
+              <img src={img1.src} alt="" className="my-2" /> */}
           </div>
         </div>
       </div>

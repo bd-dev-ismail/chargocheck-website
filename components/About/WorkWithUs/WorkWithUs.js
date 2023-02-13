@@ -1,4 +1,4 @@
-import work from "../../../assets/workwithus.png";
+import work from "../../../assets/workWithuS.jpg";
 
 const WorkWithUs = () => {
   return (

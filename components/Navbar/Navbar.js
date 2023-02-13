@@ -10,7 +10,7 @@ const Navbar = () => {
 
   const menuItem = (
     <>
-      <li>
+      {/* <li>
         <div className="dropdown  dropdown-hover">
           <label
             tabIndex={0}
@@ -48,7 +48,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-      </li>
+      </li> */}
       {/* <li>
         <Link
           href="/industries"

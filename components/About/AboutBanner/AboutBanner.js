@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { FaAngleRight } from "react-icons/fa";
-import banner from "../../../assets/aboutBanner.png";
+import banner from "../../../assets/aboutBanner.jpg";
 const AboutBanner = () => {
   const router = useRouter();
   return (

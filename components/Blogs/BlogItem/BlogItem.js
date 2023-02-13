@@ -35,7 +35,7 @@ const BlogItem = () => {
               background: "rgba(50, 152, 255, 0.05)",
               backdropFilter: "blur(5px)",
             }}
-            className="card   rounded-lg  card-compact my-5 relative w-96  shadow-xl"
+            className="card px-4 lg:px-0  rounded-lg  card-compact my-5 relative w-96  shadow-xl"
           >
             <figure>
               <img
