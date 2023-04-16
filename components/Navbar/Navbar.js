@@ -49,15 +49,15 @@ const Navbar = () => {
           </ul>
         </div>
       </li> */}
-      {/* <li>
+      <li>
         <Link
           href="/industries"
           className="font-bold flex text-base items-center tracking-wide text-primary"
         >
-          Industries <FaAngleDown className="ml-3" />
+          Industries
         </Link>
-      </li> */}
-      <li>
+      </li>
+      {/* <li>
         <div className="dropdown  dropdown-hover">
           <label
             tabIndex={1}
@@ -87,7 +87,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-      </li>
+      </li> */}
       {/* <li>
         <Link
           href="/"
@@ -97,6 +97,22 @@ const Navbar = () => {
         </Link>
       </li> */}
       <li>
+        <Link
+          href="/about"
+          className="font-bold flex text-base items-center tracking-wide text-primary"
+        >
+          Company
+        </Link>
+      </li>
+      <li>
+        <Link
+          href="/contact"
+          className="font-bold flex text-base items-center tracking-wide text-primary"
+        >
+          Contact
+        </Link>
+      </li>
+      {/* <li>
         <div className="dropdown  dropdown-hover">
           <label
             tabIndex={1}
@@ -126,15 +142,15 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-      </li>
-      {/* <li>
+      </li> */}
+      <li>
         <Link
           href="/pricing"
           className="font-bold text-base flex items-center tracking-wide text-primary"
         >
           Pricing
         </Link>
-      </li> */}
+      </li>
     </>
   );
   const menuItem2 = (

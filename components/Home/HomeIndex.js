@@ -11,12 +11,12 @@ import WhyCargocheck from "./WhyCargocheck/WhyCargocheck";
 const HomeIndex = () => {
   return (
     <div>
-      <div className="lg:hidden">
+      <div>
         <Banner />
       </div>
-      <div className="hidden lg:block">
+      {/* <div className="hidden lg:block">
         <VerticalBanner />
-      </div>
+      </div> */}
       {/* <div>
         <VerticalSlider />
       </div> */}
